@@ -5,6 +5,7 @@ on:
 
 jobs:
   job1:
+    name: Job1
     runs-on: ubuntu-latest
     steps:
       - run: |
@@ -15,6 +16,7 @@ jobs:
           echo "- Lets add a second bullet point" >> $GITHUB_STEP_SUMMARY
           echo "- How about a third one?" >> $GITHUB_STEP_SUMMARY
   job2:
+    name: Job2
     runs-on: ubuntu-latest
     steps:
       - run: |
